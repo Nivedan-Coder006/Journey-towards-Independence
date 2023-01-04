@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.timeline-section{
+	background-color: #24292d;
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
+/* 1857 Revolt */
+
+.accordion{
+	margin: 60px auto;
+	width: 500px;
+	padding-right: 120px;
+}
+.accordion li{
+	list-style: none;
+	width: 100%;
+	margin: 20px;
+	padding:10px;	
+	border-radius: 8px;
+	background:#2f363e;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
+	
+}
+.accordion li label{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	color: white;
+	
+}
+label::before{
+	content: '+';
+	margin-right: 10px;
+	font-size: 24px;
+	font-weight: 600;
+}
+input[type="radio"]{
+	display: none;
+}
+
+.accordion .content{
+	color: #555;
+	padding: 0 10px;
+	line-height: 26px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type = "radio"]:checked + label + .content{
+	max-height: 400px;
+	padding: 10px 10px 20px;
+}
+.accordion input[type = "radio"]:checked + label::before{
+	content: '';
+}
+
+a:link {
+	color: #eaa023;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: #ffffff;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: #ffffff;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+
+  .accordion2{
+	margin: 60px auto;
+	width: 500px;
+	padding-right: 120px;
+}
+
+/* Non Cooperation Movement */
+
+.accordion2 li{
+	list-style: none;
+	width: 100%;
+	margin: 20px;
+	padding:10px;	
+	border-radius: 8px;
+	background:#2f363e;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
+	
+}
+.accordion2 li label{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	color: white;
+	
+}
+label::before{
+	content: '+';
+	margin-right: 10px;
+	font-size: 24px;
+	font-weight: 600;
+}
+input[type="radio"]{
+	display: none;
+}
+
+.accordion2 .content2{
+	color: #555;
+	padding: 0 10px;
+	line-height: 26px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s, padding 0.5s;
+}
+.accordion2 input[type = "radio"]:checked + label + .content2{
+	max-height: 400px;
+	padding: 10px 10px 20px;
+}
+.accordion2 input[type = "radio"]:checked + label::before{
+	content: '';
+}
+
+/* Dandi March(Civil Disobedience Movement */
+
+.accordion3{
+	margin: 60px auto;
+	width: 500px;
+	padding-right: 120px;
+}
+.accordion3 li{
+	list-style: none;
+	width: 100%;
+	margin: 20px;
+	padding:10px;	
+	border-radius: 8px;
+	background:#2f363e;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
+	
+}
+.accordion3 li label{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	color: white;
+	
+}
+label::before{
+	content: '+';
+	margin-right: 10px;
+	font-size: 24px;
+	font-weight: 600;
+}
+input[type="radio"]{
+	display: none;
+}
+
+.accordion3 .content3{
+	color: #555;
+	padding: 0 10px;
+	line-height: 26px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s, padding 0.5s;
+}
+.accordion3 input[type = "radio"]:checked + label + .content3{
+	max-height: 400px;
+	padding: 10px 10px 20px;
+}
+.accordion3 input[type = "radio"]:checked + label::before{
+	content: '';
+}
+
+/* Quit India Movement */
+
+.accordion4{
+	margin: 60px auto;
+	width: 500px;
+	padding-right: 120px;
+}
+.accordion4 li{
+	list-style: none;
+	width: 100%;
+	margin: 20px;
+	padding:10px;	
+	border-radius: 8px;
+	background:#2f363e;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
+	
+}
+.accordion4 li label{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	color: white;
+	
+}
+label::before{
+	content: '+';
+	margin-right: 10px;
+	font-size: 24px;
+	font-weight: 600;
+}
+input[type="radio"]{
+	display: none;
+}
+
+.accordion4 .content4{
+	color: #555;
+	padding: 0 10px;
+	line-height: 26px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s, padding 0.5s;
+}
+.accordion4 input[type = "radio"]:checked + label + .content4{
+	max-height: 400px;
+	padding: 10px 10px 20px;
+}
+.accordion4 input[type = "radio"]:checked + label::before{
+	content: '';
+}
+h1{
+	color:#ffffff;
+	
+}
+
